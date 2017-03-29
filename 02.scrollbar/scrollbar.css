@@ -1,0 +1,87 @@
+body{
+    margin:auto;
+    max-width:1000px;
+    line-height:1.8em;
+}
+
+header{
+    text-align:center;
+    font-size:1.5em;
+}
+section{
+    margin:10px 0;
+}
+article{
+    text-indent:2em;
+}
+
+textarea{
+    resize:none;
+}
+
+/* Google浏览器兼容样式 */
+.textarea1::-webkit-scrollbar{
+    width:10px;
+}
+.textarea1::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:rgba(0,0,0,0.3);
+}
+.textarea1::-webkit-scrollbar-track{
+    background-color:rgba(155,155,155,0.1);
+    border-radius:10px;
+}
+.textarea1::-webkit-scrollbar-button{
+    display:none;
+}
+
+.div1{
+    width:500px;
+    height:200px;
+    overflow-y:hidden;
+}
+
+/* Firefox浏览器兼容样式 */
+    .box1{
+        width: 320px;
+        height: 400px;
+        background: #ccc;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin: 20px 0 0 100px;
+    }
+    .con1{
+        font-size: 18px;
+    }
+    #out{
+        width: 320px;
+        height: 400px;
+        background: url(bg1.png) 0 0 repeat-x;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+    }
+    #con{
+        width: 280px;
+        padding: 5px;
+        font-size: 18px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    #box{
+        width: 30px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #drag{
+        width: 30px;
+        height: 53px;
+        background: url(icon2.png) 0 0 no-repeat;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
