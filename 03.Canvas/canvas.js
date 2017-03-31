@@ -15,6 +15,8 @@ ctx.arc(100, 100, 100, 0, 2 * Math.PI, false);
 ctx.clip();           //将后面的绘图限制在一定的空间里
 ctx.fillRect(40, 180, 50, 50);
 ctx.font = "30px Arial";              //设置字体样式；
+ctx.textAlign="center";          //start、end、left、center、right
+ctx.textBaseline="ideographic"      //alphabetic、bottom、hanging、ideographic、middle、top
 ctx.fillText('hello world', 100, 100);
 
 
