@@ -4,9 +4,17 @@
 var canvas1 = document.getElementById('canvas1');
 var ctx = canvas1.getContext('2d');
 ctx.lineWidth = 5;
-ctx.strokeStyle = 'red';
-ctx.fillStyle = "green";
-ctx.beginPath();
-ctx.moveTo(50, 50);
-ctx.lineTo(114, 356);
-ctx.stroke();
+ctx.strokeStyle = '#024598';
+ctx.fillStyle = " rgba(0,255,0,0.4)";
+ctx.lineCap = "square";        //round、square、butt
+ctx.strokeRect(10, 10, 52, 63);      //等价于ctx.rect(10,10,52,63);ctx.stroke();
+ctx.arc(55, 55, 50, 0, 1.5 * Math.PI, false);
+ctx.fill();
+ctx.clearRect(20, 70, 20, 20);
+ctx.arc(100, 100, 100, 0, 2 * Math.PI, false);
+ctx.clip();           //将后面的绘图限制在一定的空间里
+ctx.fillRect(40, 180, 50, 50);
+ctx.font = "30px Arial";              //设置字体样式；
+ctx.fillText('hello world', 100, 100);
+
+
