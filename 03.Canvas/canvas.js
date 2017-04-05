@@ -26,6 +26,13 @@ img1.onload=function(){            //不加onload没效果，必须等图片加�
     var ctxData=ctx.getImageData(0,0,200,200);
     ctx.putImageData(ctxData,40,40);
 }
-
+var img2=ctx.createImageData(100,100);
+for(var i=0;i<img2.width*img2.height*4;i+=4){   //每个像素点给予数据
+    img2.data[i+0]=255;
+    img2.data[i+1]=0;
+    img2.data[i+2]=0;
+    img2.data[i+3]=100;     //透明度0到255；
+}
+ctx.putImageData(img2,20,20);
 
 
