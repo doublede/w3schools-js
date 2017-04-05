@@ -19,4 +19,13 @@ ctx.textAlign="center";          //start、end、left、center、right
 ctx.textBaseline="ideographic"      //alphabetic、bottom、hanging、ideographic、middle、top
 ctx.fillText('hello world', 100, 100);
 
+var img1=new Image();
+img1.src="images/1.jpg";
+img1.onload=function(){            //不加onload没效果，必须等图片加载完成
+    ctx.drawImage(img1,100,100,30,30);
+    var ctxData=ctx.getImageData(0,0,200,200);
+    ctx.putImageData(ctxData,40,40);
+}
+
+
 
