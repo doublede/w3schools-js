@@ -40,13 +40,17 @@ var ctx2 = canvas2.getContext("2d");
 ctx2.beginPath();
 ctx2.strokeStyle = "yellow";
 ctx2.strokeRect(10, 10, 100, 100);
-ctx2.scale(3, 3);
+ctx2.scale(3, 3);            //缩放(x,y）
 ctx2.beginPath();
 ctx2.strokeStyle = "green";
 ctx2.strokeRect(10, 10, 100, 100);
 ctx2.scale(0.5, 0.5);      //在上一次变换的基础上变换;
 ctx2.beginPath();
 ctx2.strokeStyle = "blue";
+ctx2.strokeRect(10, 10, 100, 100);
+ctx2.translate(50, 30);       //平移（x,y）
+ctx2.strokeRect(10, 10, 100, 100);
+ctx2.rotate(0.3 * Math.PI);   //选择（angle)
 ctx2.strokeRect(10, 10, 100, 100);
 
 
