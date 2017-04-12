@@ -53,4 +53,16 @@ ctx2.strokeRect(10, 10, 100, 100);
 ctx2.rotate(0.3 * Math.PI);   //选择（angle)
 ctx2.strokeRect(10, 10, 100, 100);
 
-
+//利用transform矩阵实现多样化变形,transform(a,b,c,d,e,f)
+var canvas3 = document.getElementById('canvas3');
+var ctx3 = canvas3.getContext('2d');
+ctx3.beginPath();
+ctx3.strokeStyle = "#123456";
+ctx3.strokeRect(0, 0, 100, 100);
+ctx3.transform(2, 0, 0, 2, 0, 0);     //缩放(a,0,0,d,0,0)
+ctx3.strokeRect(0, 0, 100, 100);
+ctx3.strokeStyle = '#550000';
+ctx3.transform(0.5, 0, 0, 0.5, 0, 0);
+ctx3.strokeRect(10, 10, 200, 200);
+ctx3.transform(1, 0, 0, 1, 50, 100);     //平移(1,0,0,1,e,f)
+ctx3.strokeRect(10, 10, 200, 200);
