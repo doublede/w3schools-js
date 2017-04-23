@@ -66,3 +66,12 @@ ctx3.transform(0.5, 0, 0, 0.5, 0, 0);
 ctx3.strokeRect(10, 10, 200, 200);
 ctx3.transform(1, 0, 0, 1, 50, 100);     //平移(1,0,0,1,e,f)
 ctx3.strokeRect(10, 10, 200, 200);
+
+//图形的渲染
+var canvas4 = document.getElementById('canvas4');
+var ctx4 = canvas4.getContext('2d');
+var grd = ctx4.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0.2, '#000077');
+grd.addColorStop(0.8, '#650000');
+ctx4.fillStyle = grd;
+ctx4.fillRect(0, 0, 100, 100);
