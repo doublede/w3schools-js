@@ -70,8 +70,9 @@ ctx3.strokeRect(10, 10, 200, 200);
 //图形的渲染
 var canvas4 = document.getElementById('canvas4');
 var ctx4 = canvas4.getContext('2d');
-var grd = ctx4.createLinearGradient(0, 0, 200, 0);
+var grd = ctx4.createLinearGradient(0, 0, 100, 0);           //渐变的出发点，终点
 grd.addColorStop(0.2, '#000077');
-grd.addColorStop(0.8, '#650000');
+grd.addColorStop(0.5, '#650000');
+grd.addColorStop(0.8, '#005500');
 ctx4.fillStyle = grd;
 ctx4.fillRect(0, 0, 100, 100);
