@@ -76,3 +76,9 @@ grd.addColorStop(0.5, '#650000');
 grd.addColorStop(0.8, '#005500');
 ctx4.fillStyle = grd;
 ctx4.fillRect(0, 0, 100, 100);
+var grd2 = ctx4.createRadialGradient(300, 300, 40, 300, 300, 80);          //原点渐变
+grd2.addColorStop(0.2, '#ff597d');
+grd2.addColorStop(0.5, '#42cec9');
+grd2.addColorStop(1, '#fffabd');
+ctx4.fillStyle = grd2;
+ctx4.fillRect(200, 200, 200, 200);
