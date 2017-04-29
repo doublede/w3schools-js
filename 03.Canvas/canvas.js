@@ -82,3 +82,7 @@ grd2.addColorStop(0.5, '#42cec9');
 grd2.addColorStop(1, '#fffabd');
 ctx4.fillStyle = grd2;
 ctx4.fillRect(200, 200, 200, 200);
+ctx4.fillStyle = '#f25eff';
+ctx4.globalCompositeOperation = 'source-over';      //新图形覆盖
+ctx4.fillRect(250, 250, 200, 200);
+
