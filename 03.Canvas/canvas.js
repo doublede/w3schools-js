@@ -85,4 +85,9 @@ ctx4.fillRect(200, 200, 200, 200);
 ctx4.fillStyle = '#f25eff';
 ctx4.globalCompositeOperation = 'source-over';      //新图形覆盖
 ctx4.fillRect(250, 250, 200, 200);
+ctx4.shadowColor = '#444444';
+ctx4.shadowBlur = 10;
+ctx4.shadowOffsetX = 8;
+ctx4.shadowOffsetY = 18;
+ctx4.fillRect(300, 300, 50, 50);
 
